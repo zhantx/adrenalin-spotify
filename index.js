@@ -10,7 +10,7 @@ const credentials = {
 };
 
 const spotifyApi = new SpotifyWebApi(credentials);
-const authorizeURL = spotifyApi.createAuthorizeURL(scopes);
+const authorizeURL = spotifyApi.createAuthorizeURL(scopes, null, true);
 opn(authorizeURL);
 
 const app = express();
