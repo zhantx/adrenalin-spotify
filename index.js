@@ -33,7 +33,7 @@ app.get('/spotify-code', (req, res) => {
 });
 
 app.get('/next', (req, res) => {
-  spotifyApi.skipToNext
+  spotifyApi.skipToNext()
     .then((res) => {
       console.log(res);
     });
